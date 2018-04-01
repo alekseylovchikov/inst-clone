@@ -1,0 +1,23 @@
+.header {
+    border-bottom: 1px solid $light-grey;
+    padding: 16px;
+    display: flex;
+    margin-bottom: 70px;
+    .header-left {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        .logo-text {
+            font-family: 'Courgette', cursive;
+            margin-left: 16px;
+        }
+        .logo-image {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .header-right {
+        flex: 1;
+        text-align: right;
+    }
+}

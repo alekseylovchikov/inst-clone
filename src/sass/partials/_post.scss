@@ -1,0 +1,101 @@
+.send-comment {
+    width: 24px;
+    height: 24px;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDUzNS41IDUzNS41IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MzUuNSA1MzUuNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIGlkPSJzZW5kIj4KCQk8cG9seWdvbiBwb2ludHM9IjAsNDk3LjI1IDUzNS41LDI2Ny43NSAwLDM4LjI1IDAsMjE2Ljc1IDM4Mi41LDI2Ny43NSAwLDMxOC43NSAgICIgZmlsbD0iIzAwNkRGMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 0;
+}
+
+.form-send-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    width: 614px;
+    border: 0.8px solid $light-grey;
+    box-shadow: 0 2px 4px $light-grey; 
+    overflow: hidden; /*hide bounds of image */
+
+    // Пользователь
+    .user {
+        width: 614px;
+        height: 60px;
+        padding-top: 15px;
+        padding-bottom: 15px; 
+        padding-left: 15px; 
+        border-bottom: 0.8px solid $light-grey;
+        align-items: center;
+        display: flex;
+        .user-image {
+            width: 35px;
+            height: 35px;
+        }
+        .user-name {
+            padding-left: 15px;
+        }
+    }
+
+// Фото
+    .photo {
+        // width: 100%;
+        // position: absolute;
+        // clip: rect(614px, 614px, 614px, 614px);
+        border-bottom: 0.8px solid $light-grey;
+        display: block; /*remove inline-block spaces*/
+        width: 100%; /*make image streatch*/
+    }
+
+// Комментариии и лайки
+    .post-footer {
+        width: 100%;
+        min-height: 120px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        border-bottom: 0.8px solid $light-grey;
+        .like-btn {
+            cursor: pointer;
+        }
+        // иконки
+        .icon-like {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+        .icon-comment {
+            width: 30px;
+            height: 30px;
+        }
+        // пример комментария
+        .comment {
+            display: flex;
+            margin-top: 15px;
+            .user-acc {
+                font-weight: bold;
+            }
+            .text {
+                margin-left: 15px;
+            }
+        }
+        // добавление комментария
+        .add-comment {
+            margin-top: 15px;
+            margin-right: 15px;
+            border-top: 0.8px solid $light-grey;
+            .input-comment {
+                width: 542px;
+                border: 0;
+                outline: none;
+                font-size: 14px;
+            }
+        }
+    }
+}

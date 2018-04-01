@@ -1,0 +1,16 @@
+.btn {
+    cursor: pointer;
+    padding: 12px 14px;
+    border: 2px solid #c9c9c9;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #fff;
+    &-success {
+        background-color: $green;
+        border-color: $green;
+        color: white;
+    }
+}
+
+// стили для кнопок, инпутов, айдишники для кнопок и инпутов
+
